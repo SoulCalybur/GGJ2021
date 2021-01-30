@@ -6,11 +6,12 @@ using UnityEngine;
 public class ItemData : ScriptableObject
 {
     public string id;
-    public string name;
+    public string itemName;
     public string description;
+    public bool found; 
 
 
-    public ItemData(string id, string name, string description) {
+    public ItemData(string id, string name, string description, bool found) {
 
     }
 }
