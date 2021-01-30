@@ -345,7 +345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 54667560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90532eb39f839054c9477e544e2bbc3c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ecf37d61ce15c54e9731197d1b44f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: Probuilder
