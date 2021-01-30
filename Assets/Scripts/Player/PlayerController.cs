@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
+    private bool isDigging = false;
+
     private Vector2 moveInput = new Vector2();
     private CharacterController controller;
     private Vector3 velocity;
@@ -21,6 +23,12 @@ public class PlayerController : MonoBehaviour
         Debug.Log(context);
         moveInput = context.ReadValue<Vector2>();
     }
+
+    public void PollDigButton(InputAction.CallbackContext context) {
+        bool digging = context.action.triggered;
+        isDigging = digging;
+    }
+
     private void OnEnable() {
     }
     private void Start() {
@@ -29,6 +37,14 @@ public class PlayerController : MonoBehaviour
     }
     // Update is called once per frame
     void Update() {
+        if(isDigging == true) {
+            digUpdate();
+        } else {
+            moveUpdate();
+        }
+    }
+
+    private void moveUpdate() {
         velocity.y = 0;
 
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
@@ -37,12 +53,16 @@ public class PlayerController : MonoBehaviour
         controller.Move(move * Time.deltaTime * moveSpeed);
 
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        controller.Move(velocity);
 
-        if(moveInput != Vector2.zero) {
-            float targetAngle = Mathf.Atan2(moveInput.x, moveInput.y) * Mathf.Rad2Deg +cameraTransform.eulerAngles.y;
+        if (moveInput != Vector2.zero) {
+            float targetAngle = Mathf.Atan2(moveInput.x, moveInput.y) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
             Quaternion rotation = Quaternion.Euler(0f, targetAngle, 0f);
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
         }
     }
+
+    private void digUpdate() {
+    }
+
 }
