@@ -9,5 +9,4 @@ public class ItemDatabase : ScriptableObject {
 
     public ItemData[] items;
 
-
 }

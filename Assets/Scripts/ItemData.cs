@@ -9,9 +9,8 @@ public class ItemData : ScriptableObject
     public string name;
     public string description;
 
+
     public ItemData(string id, string name, string description) {
 
     }
-
-
 }
