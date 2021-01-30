@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71c8a9f3d553ae469df599630f63e52, type: 3}
   m_Name: AlarmClock
   m_EditorClassIdentifier: 
+  id: 
+  itemName: 
+  description: 
+  found: 0

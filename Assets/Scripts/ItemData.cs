@@ -14,4 +14,5 @@ public class ItemData : ScriptableObject
     public ItemData(string id, string name, string description, bool found) {
 
     }
+    
 }

@@ -1,22 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuriedItem : MonoBehaviour
 {
+    
+    [SerializeField] public  int id;
+    [SerializeField] public  string itemName;
+    [SerializeField] string description;
+    [SerializeField] bool found;
 
-    private string id = null;
-    [SerializeField]
-    private AudioClip sound;
+    [SerializeField] private AudioClip sound;
+    //when ausgegraben, ItemData found = true;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

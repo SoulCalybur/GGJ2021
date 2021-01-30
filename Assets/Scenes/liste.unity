@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1476580063497121694, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Name
-      value: Background_Item_Text (3)
+      value: AlarmClock
       objectReference: {fileID: 0}
     - target: {fileID: 1476580063497121694, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_IsActive
@@ -234,9 +234,25 @@ PrefabInstance:
       propertyPath: m_text
       value: Alarm Clock
       objectReference: {fileID: 0}
+    - target: {fileID: 1476580063781739102, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Name
+      value: textAlarmClock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Name
+      value: ButtonAlarmClock
+      objectReference: {fileID: 0}
     - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_TagString
+      value: ButtonAlarmClock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663542504288734874, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Color.a
@@ -261,6 +277,26 @@ PrefabInstance:
     - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.4138174
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
@@ -477,6 +513,7 @@ GameObject:
   - component: {fileID: 853845904}
   - component: {fileID: 853845903}
   - component: {fileID: 853845902}
+  - component: {fileID: 853845905}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -568,6 +605,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853845900}
   m_CullTransparentMesh: 1
+--- !u!114 &853845905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853845900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cf6bb4380dde24792689675dd70044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1096220491
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1476580063497121694, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Name
-      value: Background_Item_Text (2)
+      value: ZombieBackground
       objectReference: {fileID: 0}
     - target: {fileID: 1476580063497121694, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_IsActive
@@ -888,9 +937,25 @@ PrefabInstance:
       propertyPath: m_text
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 1476580063781739102, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Name
+      value: textZombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Name
+      value: ButtonZombie
+      objectReference: {fileID: 0}
     - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_TagString
+      value: ButtonZombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663542504288734874, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Color.a
@@ -916,6 +981,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.4138174
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
 --- !u!1001 &2006398317
@@ -935,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1476580063497121694, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Name
-      value: Background_Item_Text (1)
+      value: RingBackground
       objectReference: {fileID: 0}
     - target: {fileID: 1476580063497121694, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_IsActive
@@ -1037,9 +1122,25 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 29
       objectReference: {fileID: 0}
+    - target: {fileID: 1476580063781739102, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Name
+      value: textRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Name
+      value: ButtonRing
+      objectReference: {fileID: 0}
     - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_TagString
+      value: ButtonRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663542504288734874, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Color.a
@@ -1065,6 +1166,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.4138174
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866827822927728010, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
 --- !u!1001 &7635242939529462665
@@ -1074,9 +1195,53 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 853845901}
     m_Modifications:
+    - target: {fileID: 1199257705396719077, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199257705396719077, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199257705396719077, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199257705396719077, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.4138174
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199257705396719077, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199257705396719077, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152052708511975494, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152052708511975494, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152052708511975494, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719444815045381877, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088286372880037313, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Name
+      value: ButtonLightsaber
+      objectReference: {fileID: 0}
     - target: {fileID: 6088286372880037313, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7635242940130016104, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
       propertyPath: m_Pivot.x
@@ -1166,6 +1331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundList
       objectReference: {fileID: 0}
+    - target: {fileID: 7635242940775029297, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Name
+      value: textLightsaber
+      objectReference: {fileID: 0}
     - target: {fileID: 7635242940960174064, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1181,6 +1350,10 @@ PrefabInstance:
     - target: {fileID: 7635242940960174064, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635242940960174065, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
+      propertyPath: m_Name
+      value: LightsaberBackground
       objectReference: {fileID: 0}
     - target: {fileID: 7635242941175600242, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
       propertyPath: m_Color.b

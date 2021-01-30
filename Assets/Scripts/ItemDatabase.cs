@@ -4,9 +4,11 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "ItemDatabase", menuName = "ScriptableObjects/ItemDatabase", order = 1)]
-public class ItemDatabase : ScriptableObject {
+public class ItemDatabase : ScriptableObject
+{
 
-
+    new BuriedItem testItem;
+    public string thisItem;
     public ItemData[] items;
 
 }
