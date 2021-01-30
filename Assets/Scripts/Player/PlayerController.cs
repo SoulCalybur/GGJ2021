@@ -26,7 +26,9 @@ public class PlayerController : MonoBehaviour
 
     public void PollDigButton(InputAction.CallbackContext context) {
         bool digging = context.action.triggered;
-        isDigging = digging;
+        if(digging == true) {
+            isDigging = true;
+        }
     }
 
     private void OnEnable() {
