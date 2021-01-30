@@ -10,7 +10,7 @@ public class BeforeStartState : State
 
     public void Update() {
         this.countdown -= Time.deltaTime;
-        Debug.Log(this.countdown);
+        //Debug.Log(this.countdown);
         if(countdown <= 0) {
             LevelManager.instance.changeToState(States.Ingame);
         }
