@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 27868142}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54667564}
+        m_TargetAssemblyTypeName: SzenenManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &27868142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +267,7 @@ GameObject:
   - component: {fileID: 54667561}
   - component: {fileID: 54667563}
   - component: {fileID: 54667562}
+  - component: {fileID: 54667564}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -323,6 +336,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54667560}
   m_CullTransparentMesh: 1
+--- !u!114 &54667564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54667560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90532eb39f839054c9477e544e2bbc3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Probuilder
 --- !u!1 &109582539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,7 +1037,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.09246628, g: 0.076762185, b: 0.6509434, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1031,7 +1057,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 687498576}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54667564}
+        m_TargetAssemblyTypeName: SzenenManager, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &687498576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,8 +1424,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Your Master....\nIs the best master in the world!\n\nWoof! Woof!\n\nYes
-    yes I want to FETCH his playthings!! \n\nFetch everything, so I get a good bellyrub!!\n\nLet's
+  m_text: "Master....\nIs the best master in the world!\n\nWoof! Woof!\n\nYes yes
+    I want to FETCH his playthings!! \n\nFetch everything, so I get a good bellyrub!!\n\nLet's
     look at what I have to smell... \nthere's a list somewhere here!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1510,7 +1548,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018603178}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
