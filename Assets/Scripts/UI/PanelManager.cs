@@ -7,41 +7,33 @@ public class PanelManager : MonoBehaviour
 {
     public GameObject ItemPrefab; //wird im Spiel eingegeben...
     public ItemDatabase database;
-    public void OnEnable()
-    {
-        int i;
-        for (i =0; i< 4; i++) {
-            Button buttonInPrefab = ItemPrefab.GetComponentInChildren<Button>();
-            buttonInPrefab.image.enabled = false;
-        }
-    }
-
+   
 
     //Diese Methode soll aufgerufen werden wenn der Hund etwas von der Liste findet. 
     //Tag wird verglichen, und Button auf grün gesetzt
     //found == true muss erfüllt sein!
-    public void ItemFound(int id)
-    {   
-        Button buttonInPrefab = ItemPrefab.GetComponentInChildren<Button>();
-        if(id == 0 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonLightsaber"))
+    public void ItemFound(string itemName)
+    {
+        if (itemName.Equals("Lightsaber"))
         {
-        buttonInPrefab.image.enabled = true;
-        }   
-        else if (id == 1 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonRing"))
-        {
-            buttonInPrefab.image.enabled = true;
+            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
         }
-        else if (id == 2 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonZombie"))
+        else if (itemName.Equals("Lightsaber"))
         {
-            buttonInPrefab.image.enabled = true;
+            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
         }
-        else if (id == 3 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonAlarmClock"))
+        else if (itemName.Equals("Lightsaber"))
         {
-            buttonInPrefab.image.enabled = true;
+            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
+        }
+
+        else if (itemName.Equals("Lightsaber"))
+        {
+            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
         }
         else
         {
             Debug.Log("Findet Tag oder id nicht");
         }
-    }
-}
+            }
+        }
