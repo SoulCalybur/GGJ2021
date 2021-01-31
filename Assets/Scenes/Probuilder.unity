@@ -2543,6 +2543,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1600293466}
     m_Modifications:
     - target: {fileID: -4346382373404345409, guid: c87d15be33d46554a82caf54a1ed3bc4, type: 3}
+      propertyPath: m_Volume
+      value: 0.759
+      objectReference: {fileID: 0}
+    - target: {fileID: -4346382373404345409, guid: c87d15be33d46554a82caf54a1ed3bc4, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 55ac7a278c4330e428929c6790aa48c0, type: 3}
@@ -5946,11 +5950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -6.666017e-15
+      value: -9.779321e-15
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.4599423e-15
+      value: 3.1435282e-15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2013116ec0295ec45a429837de41950e, type: 3}
