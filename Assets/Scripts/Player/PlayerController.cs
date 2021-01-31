@@ -6,7 +6,9 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    private bool isDigging = false;
+    [SerializeField]
+    public bool isDigging = false;
+    private DiggingAction digAction;
 
     private Vector2 moveInput = new Vector2();
     private CharacterController controller;
@@ -20,15 +22,21 @@ public class PlayerController : MonoBehaviour
     private Transform cameraTransform;
 
     public void PollMovementInput(InputAction.CallbackContext context) {
-        Debug.Log(context);
         moveInput = context.ReadValue<Vector2>();
     }
 
     public void PollDigButton(InputAction.CallbackContext context) {
-        bool digging = context.action.triggered;
-        if(digging == true) {
-            isDigging = true;
+        if(context.action.triggered == true) {
+            //digAction.startDigging();
+            if(!isDigging) {
+                StartCoroutine(digAction.startDigging());
+                isDigging = true;
+            } else {
+                digAction.digDeeper();
+            }
         }
+
+
     }
 
     private void OnEnable() {
@@ -36,6 +44,7 @@ public class PlayerController : MonoBehaviour
     private void Start() {
         controller = gameObject.GetComponent<CharacterController>();
         cameraTransform = Camera.main.transform;
+        digAction = gameObject.GetComponent<DiggingAction>();
     }
     // Update is called once per frame
     void Update() {
