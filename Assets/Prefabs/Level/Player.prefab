@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4130346158515987917}
   - component: {fileID: 290708157}
   - component: {fileID: 290708156}
+  - component: {fileID: 5935243033931453113}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6790144015281355169}
+  - {fileID: 6496975575959600073}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81,13 +82,13 @@ MonoBehaviour:
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4130346158515987916}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 290708156}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: PollDigButton
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -170,9 +171,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010c006d6bf12a24796674c47ec51d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDigging: 0
   moveSpeed: 7
   rotationSpeed: 8
---- !u!1001 &6463168478595227210
+--- !u!114 &5935243033931453113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130346158515987916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bb56b083ea1a24faec3a209ecb87b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiBar: {fileID: 0}
+  digPrefab: {fileID: 6833659391777165394, guid: ab50939897c7b0149837524954486855, type: 3}
+--- !u!1001 &6747339610013604898
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -197,23 +213,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.50008726
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.49991274
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.50008726
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.49991274
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.98
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -229,8 +245,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
---- !u!4 &6790144015281355169 stripped
+--- !u!4 &6496975575959600073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a2db3a5b089b3cc478d2b52873190189, type: 3}
-  m_PrefabInstance: {fileID: 6463168478595227210}
+  m_PrefabInstance: {fileID: 6747339610013604898}
   m_PrefabAsset: {fileID: 0}
