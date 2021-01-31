@@ -8,6 +8,7 @@ public class DiggingAction : MonoBehaviour
 
     public BuriedItem[] buriedItems;
     private BuriedItem foundItem;
+    private List<BuriedItem> foundItems;
 
     [SerializeField]
     private GameObject uiBar;
@@ -32,12 +33,13 @@ public class DiggingAction : MonoBehaviour
 
     public void digDeeper() {
         increaseValue(0.15f);
-        Debug.Log("Digging deeper!! to:" + progressBar.value);
     }
 
     private BuriedItem findClosestItem() {
         BuriedItem closest = null;
         for (int i = 0; i < buriedItems.Length; i++) {
+            if (buriedItems[i].found) return null;
+
             float minDistItem = buriedItems[i].GetComponent<AudioSource>().minDistance;
             Vector3 itemPos = buriedItems[i].transform.position;
             Vector3 playerPos = this.transform.position;
@@ -62,6 +64,18 @@ public class DiggingAction : MonoBehaviour
 
     void increaseValue(float amount) {
         progressBar.value += amount;
+        if(progressBar.value >= 0.99999) {
+            controller.isDigging = false;
+
+            foundItem.transform.position = digHole.transform.position + new Vector3(0, 1, 0);
+            foundItem.found = true;
+            foundItem.GetComponentInChildren<BoxCollider>().enabled = false;
+            foundItem.GetComponent<AudioSource>().Stop();
+            foundItems.Add(foundItem);
+            Debug.Log(foundItems.Count);
+
+            foundItem = null;
+        }
     }
     
 
@@ -77,10 +91,21 @@ public class DiggingAction : MonoBehaviour
                 controller.isDigging = false;
             }
         }
+
+        if (foundItems.Count > 0) {
+            for (int i = 0; i < foundItems.Count; i++) {
+                Debug.Log(foundItems[i]);
+                foundItems[i].transform.Rotate(Vector3.up, 0.3f);
+            }
+        }
     }
     void Start() {
+        foundItems = new List<BuriedItem>();
+
         progressBar = uiBar.GetComponent<Slider>();
         controller = gameObject.GetComponent<PlayerController>();
+
         buriedItems = Object.FindObjectsOfType<BuriedItem>();
+
     }
 }
