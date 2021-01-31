@@ -14,9 +14,9 @@ public class PanelManager : MonoBehaviour
     //found == true muss erfüllt sein!
     public void ItemFound(string itemName)
     {
-        if (itemName.Equals("Lightsaber"))
+        if (itemName.Equals("AlarmClock"))
         {
-            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
+            GameObject.FindGameObjectWithTag("AlarmClock").GetComponentInChildren<Button>().image.enabled = false;
         }
         else if (itemName.Equals("Lightsaber"))
         {

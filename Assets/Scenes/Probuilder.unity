@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6088286372880037313, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
       propertyPath: m_TagString
-      value: ButtonLightsaber
+      value: Lightsaber
       objectReference: {fileID: 0}
     - target: {fileID: 7635242940130016104, guid: 22b5d8d4fd5577148a4ba9ef69ca196b, type: 3}
       propertyPath: m_Pivot.x
@@ -821,7 +821,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 04bc14c7de390ea49b266d57cee58fd0, type: 3}
     - target: {fileID: 6028340583508832425, guid: c87d15be33d46554a82caf54a1ed3bc4, type: 3}
       propertyPath: itemName
-      value: Laserschwert
+      value: Lightsaber
       objectReference: {fileID: 0}
     - target: {fileID: 6028340583508832425, guid: c87d15be33d46554a82caf54a1ed3bc4, type: 3}
       propertyPath: description
@@ -829,7 +829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8540928333346881352, guid: c87d15be33d46554a82caf54a1ed3bc4, type: 3}
       propertyPath: m_Name
-      value: Laserschwert
+      value: Lightsaber
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c87d15be33d46554a82caf54a1ed3bc4, type: 3}
@@ -3509,7 +3509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_TagString
-      value: ButtonAlarmClock
+      value: AlarmClock
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Sprite
@@ -3715,7 +3715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_TagString
-      value: ButtonZombie
+      value: Zombie
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Sprite
@@ -3966,7 +3966,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100386425}
-  m_LocalRotation: {x: 0.3941625, y: 0.00000003649017, z: -0.000000015650075, w: 0.9190408}
+  m_LocalRotation: {x: 0.3941625, y: -0.00000003649017, z: 0.000000015650075, w: 0.9190408}
   m_LocalPosition: {x: 4.975, y: 5.942051, z: 0.64470243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5784,7 +5784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3023596005041616302, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_TagString
-      value: ButtonRing
+      value: Potion
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Sprite
@@ -5885,11 +5885,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265008193564, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000015905353
+      value: -0.00000001590535
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265008193564, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000006563487
+      value: 0.000000006563486
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5909,11 +5909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -6.666017e-15
+      value: -9.779321e-15
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.4599423e-15
+      value: 3.1435282e-15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2013116ec0295ec45a429837de41950e, type: 3}
