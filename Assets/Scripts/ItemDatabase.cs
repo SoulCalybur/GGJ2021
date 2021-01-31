@@ -7,7 +7,7 @@ using UnityEngine;
 public class ItemDatabase : ScriptableObject
 {
 
-    new BuriedItem testItem;
+
     public string thisItem;
     public ItemData[] items;
 

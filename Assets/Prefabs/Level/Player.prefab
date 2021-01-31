@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4130346158515987917}
   - component: {fileID: 290708157}
   - component: {fileID: 290708156}
+  - component: {fileID: 3628646758030401180}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -172,6 +173,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   rotationSpeed: 8
+--- !u!81 &3628646758030401180
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130346158515987916}
+  m_Enabled: 1
 --- !u!1001 &6463168478595227210
 PrefabInstance:
   m_ObjectHideFlags: 0

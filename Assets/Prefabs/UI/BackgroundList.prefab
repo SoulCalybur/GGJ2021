@@ -205,6 +205,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7635242940130016104}
     m_Modifications:
+    - target: {fileID: 1001411356360511097, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -0.00024414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001411356360511097, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00008392334
+      objectReference: {fileID: 0}
     - target: {fileID: 1476580063164766648, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -309,21 +317,37 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3663542504288734874, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Text
+      value: FOUND!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663542504288734874, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cc749e02e5a3fbe4783358793bb77538, type: 3}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Color.b
-      value: 0.956861
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212257748067551273, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7709099924596220447, guid: b15ca0a5065d9d543b32990b240f9fd6, type: 3}
       propertyPath: m_IsActive

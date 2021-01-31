@@ -9,10 +9,13 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Probuilder.unity
-    guid: 52bb9fb9ccfb6654dba599af7746c885
+    path: Assets/Scenes/Szene0.unity
+    guid: cdb573a5f0b0d25478b7f6a2ab315c37
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 1797c966d414b244786923a7d6a55030
+  - enabled: 1
+    path: Assets/Scenes/Probuilder.unity
+    guid: 52bb9fb9ccfb6654dba599af7746c885
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 20e8145a52dbe5b41841473ea52292c3, type: 2}

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PanelManager : MonoBehaviour
 {
-    public GameObject ItemPrefab;
+    public GameObject ItemPrefab; //wird im Spiel eingegeben...
     public ItemDatabase database;
     public void OnEnable()
     {
@@ -19,27 +19,29 @@ public class PanelManager : MonoBehaviour
 
     //Diese Methode soll aufgerufen werden wenn der Hund etwas von der Liste findet. 
     //Tag wird verglichen, und Button auf grün gesetzt
-    public void ItemFound()
-    {
+    //found == true muss erfüllt sein!
+    public void ItemFound(int id)
+    {   
         Button buttonInPrefab = ItemPrefab.GetComponentInChildren<Button>();
-        if (buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonLightsaber")){
-            buttonInPrefab.image.enabled = true;
-        }
-        else if (buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonRing"))
+        if(id == 0 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonLightsaber"))
+        {
+        buttonInPrefab.image.enabled = true;
+        }   
+        else if (id == 1 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonRing"))
         {
             buttonInPrefab.image.enabled = true;
         }
-        else if (buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonZombie"))
+        else if (id == 2 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonZombie"))
         {
             buttonInPrefab.image.enabled = true;
         }
-        else if (buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonAlarmClock"))
+        else if (id == 3 && buttonInPrefab.GetComponentInChildren<Button>().CompareTag("ButtonAlarmClock"))
         {
             buttonInPrefab.image.enabled = true;
         }
         else
         {
-            Debug.Log("Findet Tag nicht");
+            Debug.Log("Findet Tag oder id nicht");
         }
     }
 }
