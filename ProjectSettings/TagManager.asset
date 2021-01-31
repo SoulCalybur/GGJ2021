@@ -8,6 +8,10 @@ TagManager:
   - ButtonRing
   - ButtonZombie
   - ButtonAlarmClock
+  - Lightsaber
+  - AlarmClock
+  - Zombie
+  - Potion
   layers:
   - Default
   - TransparentFX
