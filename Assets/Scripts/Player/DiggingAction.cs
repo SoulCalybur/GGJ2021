@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class DiggingAction : MonoBehaviour
 {
 
+    public PanelManager uiPanel;
+
     public BuriedItem[] buriedItems;
     private BuriedItem foundItem;
     private List<BuriedItem> foundItems;
@@ -27,6 +29,8 @@ public class DiggingAction : MonoBehaviour
         foundItem = findClosestItem();
         if(foundItem != null) {
             foundItem.transform.position = digHole.transform.position + new Vector3(0, -1 + progressBar.value, 0);
+        } else {
+            controller.isDigging = false;
         }
         yield break;
     }
@@ -64,17 +68,25 @@ public class DiggingAction : MonoBehaviour
 
     void increaseValue(float amount) {
         progressBar.value += amount;
+
         if(progressBar.value >= 0.99999) {
+            // FOUND AND DIGGED AN FUCKING ITEM!
             controller.isDigging = false;
+            if(foundItem != null) {
+                foundItem.transform.position = digHole.transform.position + new Vector3(0, 1, 0);
+                foundItem.found = true;
+                if(foundItem.GetComponentInChildren<BoxCollider>() != null) {
+                    foundItem.GetComponentInChildren<BoxCollider>().enabled = false;
+                }
+                foundItem.GetComponent<AudioSource>().Stop();
+                foundItems.Add(foundItem);
 
-            foundItem.transform.position = digHole.transform.position + new Vector3(0, 1, 0);
-            foundItem.found = true;
-            foundItem.GetComponentInChildren<BoxCollider>().enabled = false;
-            foundItem.GetComponent<AudioSource>().Stop();
-            foundItems.Add(foundItem);
-            Debug.Log(foundItems.Count);
+                uiPanel.ItemFound(foundItem.id); //show in UI
 
-            foundItem = null;
+                foundItem = null;
+                progressBar.value = 0;
+
+            }
         }
     }
     
@@ -89,6 +101,7 @@ public class DiggingAction : MonoBehaviour
             }
             if(progressBar.value <= 0.00005f) {
                 controller.isDigging = false;
+                foundItem = null;
             }
         }
 

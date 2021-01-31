@@ -7,35 +7,22 @@ public class PanelManager : MonoBehaviour
 {
 
     public BuriedItem[] buriedItems;
+    private ItemButton[] itemButtons;
 
     private void Start() {
         buriedItems = Object.FindObjectsOfType<BuriedItem>();
+        itemButtons = gameObject.GetComponentsInChildren<ItemButton>();
     }
     //Diese Methode soll aufgerufen werden wenn der Hund etwas von der Liste findet. 
     //Tag wird verglichen, und Button auf grün gesetzt
     //found == true muss erfüllt sein!
-    public void ItemFound(string itemName, bool found)
+    public void ItemFound(int itemId)
     {
-        if (itemName.Equals("AlarmClock"))
-        {
-            GameObject.FindGameObjectWithTag("AlarmClock").GetComponentInChildren<Button>().image.enabled = false;
-        }
-        else if (itemName.Equals("Lightsaber") )
-        {
-            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
-        }
-        else if (itemName.Equals("Lightsaber") )
-        {
-            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
-        }
-
-        else if (itemName.Equals("Lightsaber") )
-        {
-            GameObject.FindGameObjectWithTag("Lightsaber").GetComponentInChildren<Button>().image.enabled = false;
-        }
-        else
-        {
-            Debug.Log("Findet Tag oder id nicht");
-        }
+        for (int i = 0; i < itemButtons.Length; i++) {
+            if(itemButtons[i].id == itemId) {
+                itemButtons[i].Found();
+                break;
             }
         }
+    }
+}
