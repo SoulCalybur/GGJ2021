@@ -94,7 +94,6 @@ public class DiggingAction : MonoBehaviour
 
         if (foundItems.Count > 0) {
             for (int i = 0; i < foundItems.Count; i++) {
-                Debug.Log(foundItems[i]);
                 foundItems[i].transform.Rotate(Vector3.up, 0.3f);
             }
         }
