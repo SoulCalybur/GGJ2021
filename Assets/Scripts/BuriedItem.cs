@@ -9,7 +9,7 @@ public class BuriedItem : MonoBehaviour
     [SerializeField] public  int id;
     [SerializeField] public  string itemName;
     [SerializeField] string description;
-    [SerializeField] bool found;
+    [SerializeField] public bool found = false;
 
     [SerializeField] private AudioClip sound;
     //when ausgegraben, ItemData found = true;
