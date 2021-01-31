@@ -487,7 +487,6 @@ GameObject:
   - component: {fileID: 94104039}
   - component: {fileID: 94104038}
   - component: {fileID: 94104037}
-  - component: {fileID: 94104036}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -515,18 +514,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00024414062, y: -0.0036621094}
   m_SizeDelta: {x: 486.3933, y: 309.9809}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &94104036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94104034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88cf6bb4380dde24792689675dd70044, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &94104037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,7 +1704,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19672
+  m_Name: pb_Mesh73786
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4157,7 +4144,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19686
+  m_Name: pb_Mesh73800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4321,7 +4308,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19758
+  m_Name: pb_Mesh73874
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4636,7 +4623,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19702
+  m_Name: pb_Mesh73816
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4808,6 +4795,7 @@ GameObject:
   - component: {fileID: 1600293463}
   - component: {fileID: 1600293462}
   - component: {fileID: 1600293467}
+  - component: {fileID: 1600293468}
   m_Layer: 0
   m_Name: UndergroundPlane
   m_TagString: Untagged
@@ -5519,6 +5507,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1600293468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600293461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecf37d61ce15c54e9731197d1b44f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: 
 --- !u!1 &1694648854
 GameObject:
   m_ObjectHideFlags: 0
@@ -5941,15 +5942,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.34620613
+      value: 0.3462061
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000055918605
+      value: -6.666017e-15
       objectReference: {fileID: 0}
     - target: {fileID: 5272625265769209596, guid: 2013116ec0295ec45a429837de41950e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000020635493
+      value: 2.4599423e-15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2013116ec0295ec45a429837de41950e, type: 3}
@@ -6794,7 +6795,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19794
+  m_Name: pb_Mesh73910
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
